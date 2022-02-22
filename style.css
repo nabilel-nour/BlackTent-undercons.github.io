@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+*{
+    padding: 0 0 0 0 ;
+    margin: 0 0 0 0 ;
+    box-sizing: border-box;
+}
+body{
+   font-family: "Roboto", sans-serif; 
+   height: 100vh;
+   background-color: #070707;
+   overflow: hidden;
+   color: #fff;
+   font-weight: 900;
+   font-size: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+.header{
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+img{
+    height: auto;
+    width: 50vw;
+    position: ;
+
+}
+.departments{
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+.departments > .fulltext{
+    border-right: 0.2rem solid #fff;
+}
+.soical-media{
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    align-content: center;
+}
+ul{
+    position: relative;
+    display: flex;
+    gap:;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ul li:hover{
+    z-index: 10000;
+    transform: scale(0.85);
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr); 
+    z-index: 10;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+ul li:hover a{
+    font-size: 3rem;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+@media screen and (max-width: 1024px) {
+    .departments{
+        font-size: 4rem;
+    }
+    img{
+        width: 80vw;
+    }
+    .soical-media{
+        margin-top: 5vh;
+        
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .departments{
+        font-size: 2.5rem;
+        margin-top: -40px;
+        height: 45px;
+    }
+    img{
+        width: 80vw;
+    }
+    ul li {
+        width: 50px;    
+    }
+}
